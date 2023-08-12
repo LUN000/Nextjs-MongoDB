@@ -1,6 +1,6 @@
 import connectMongoDB from '@/libs/mongodb';
 import Member from '@/models/member';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export async function POST(request) {
     const { email, psswd, verify } = await request.json();
