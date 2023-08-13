@@ -2,9 +2,9 @@ import mongoose, { Schema } from "mongoose";
 
 const memberSchema = new Schema (
     {
-        email: String,
-        psswd: String,
-        verify: Boolean,
+        email: { type: String, required: true, unique: true},
+        psswd: { type: String, required: true},
+        verify: { type: Boolean},
     },{
         timestamps: true,
     }
