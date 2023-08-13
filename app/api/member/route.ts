@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
         await connectMongoDB();
         await Member.create({ email, psswd, verify });
         return NextResponse.json({ message: 'Member Created' }, { status: 201 });
-    } catch ( err ) {
+    } catch ( err: any ) {
         if( err.code === 11000 ) {
             return NextResponse.json({ error: 'Duplicate email', message: 'Email address been used' }, { status: 400 });
         } else {
