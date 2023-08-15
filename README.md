@@ -32,3 +32,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## API
+Post: Create member
+```ts
+url: http://{url}/api/member
+body {
+    "email": "32432@,gmail.com",
+    "psswd": "abcdefg",
+    "verify": true
+}
+```
+Get: Query members
+```ts
+url: http://{url}/api/member?={id}
+```
+PUT: Reset pass word
+```ts
+url: http://{url}/api/member/{id}
+body: {
+    "email": "32432@,gmail.com",
+    "psswd": {new_password},
+    "verify": true
+} 
+```
+DELETE: Delte member data
+```ts
+url: http://{url}/api/member?={id}
+```
