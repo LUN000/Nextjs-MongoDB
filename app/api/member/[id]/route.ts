@@ -3,6 +3,10 @@ import Member from '@/models/member';
 import bcrypt from "bcryptjs";
 import { NextResponse, NextRequest } from 'next/server';
 
+
+/**
+ * Encrypt new psswd and update member psswwd. 
+ */
 export async function PUT(request: NextRequest, { params }) {
     const { id }= params;
     const { email, psswd, verify } = await request.json();
