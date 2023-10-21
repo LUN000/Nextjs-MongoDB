@@ -25,7 +25,15 @@ const Resume = () => {
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
-          | GitHub
+          | GitHub |
+        </a>
+        <a
+          href="https://medium.com/@lun_0000/color-difference-calculation-in-iq-analyzer-imatest-15d027d7d1fa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          | Medium
         </a>
       </header>
 
@@ -33,7 +41,7 @@ const Resume = () => {
         <section className="mb-6">
             <h2 className="text-2xl text-blue-600 font-semibold">Self Introduction</h2>
             <p className="text-gray-600 mt-4">
-              I am a web developer with experience in <b>backend-end</b> technologies such as <b>Django, Next.js</b>, enjoy creating intersting and useful web applications.<br/>
+              I am a web developer with experience in <b>backend</b> technologies such as <b>Django & Next.js</b>, enjoy creating intersting and useful web applications.<br/>
               Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
               I look forward to new challenges and opportunities that allow me to blend these two areas of expertise and create impactful digital experiences. If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.
             </p>
@@ -45,9 +53,9 @@ const Resume = () => {
             <p className="text-gray-600">Robert Bosch</p>
             <p className="text-gray-600">March 2023 - Present</p>
             <p className="text-gray-600">
-              - Developed and maintained Image Quality testing Tool<br />
-              - Create Automation test tool<br />
-              - Create DataUpaload tool
+              - Developed and Maintained Image Quality Assessment Tool<br />
+              - Create Automation Testing Tools with Lab Devices<br />
+              - Apply Camera Image Quality Testing
             </p>
           </div>
           <div className="mt-4">
@@ -107,7 +115,6 @@ const Resume = () => {
               Publish
             </button>
           </form>
-          console.log(form)
         </section>
 
       </main>
