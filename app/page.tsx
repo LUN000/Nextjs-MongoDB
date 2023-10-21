@@ -34,8 +34,8 @@ const Resume = () => {
             <h2 className="text-2xl text-blue-600 font-semibold">Self Introduction</h2>
             <p className="text-gray-600 mt-4">
               I am a web developer with experience in <b>backend-end</b> technologies such as <b>Django, Next.js</b>, enjoy creating intersting and useful web applications.<br/>
-              Also, I'm passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
-              I look forward to new challenges and opportunities that allow me to blend these two areas of expertise and create impactful digital experiences. If you'd like to learn more or collaborate, please don't hesitate to reach out to me.
+              Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
+              I look forward to new challenges and opportunities that allow me to blend these two areas of expertise and create impactful digital experiences. If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.
             </p>
         </section>
         <section className="mb-4">
