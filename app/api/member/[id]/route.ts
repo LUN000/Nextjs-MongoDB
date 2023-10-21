@@ -7,8 +7,8 @@ import { NextResponse, NextRequest } from 'next/server';
 /**
  * Encrypt new psswd and update member psswwd. 
  */
-export async function PUT(request: NextRequest, { params }) {
-    const { id }= params;
+export async function PUT(request: NextRequest, params: string) {
+    const { id }: any = params;
     const { email, psswd, verify } = await request.json();
     
     // hash psswd
