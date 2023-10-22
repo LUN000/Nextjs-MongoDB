@@ -1,51 +1,57 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Resume = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 py-12 px-4">
+  return (  
+    <div className="scroll-smooth bg-gradient-to-r from-gray-600">
       <Head>
-        <title>My Resume</title>
+        <title>My Homepage</title>
       </Head>
 
-      <header className="text-center">
-        <h1 className="text-3xl font-bold text-blue-600 mb-2">Allen TSOU</h1>
-        <p className="text-xl text-gray-600 mb-6">Web Developer, Image Quality Engineer</p>
-        <a
-          href="https://www.linkedin.com/in/lun0000/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
-        >
-          LinkedIn |
-        </a>
-        <a
-          href="https://github.com/LUN000"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
-        >
-          | GitHub |
-        </a>
-        <a
-          href="https://medium.com/@lun_0000/color-difference-calculation-in-iq-analyzer-imatest-15d027d7d1fa"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
-        >
-          | Medium
-        </a>
+      <header className="container min-h-screen mx-auto py-12 px-4">
+        <h1 className="text-9xl font-bold text-white-600 mb-1">Allen TSOU</h1>
+        <p className="text-4xl text-white-600 mb-6">Web Developer, Image Quality Engineer</p>
+        <p className="text-white-600 mb-36">
+              I am a web developer with experience in <b>backend</b> technologies such as <b>Django & Next.js</b><br/>
+              Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
+              If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.<br/>
+              I look forward to new challenges and opportunities allow me to blend these two areas of expertise and create impactful products.
+        </p>
+        <div className='text-end mb-3'>
+          <a
+            href="https://www.linkedin.com/in/lun0000/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-6xl font-bold text-white-600 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+          >
+            LinkedIn |
+          </a>
+        </div>
+        <div className='text-end mb-3'>
+          <a
+            href="https://github.com/LUN000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-6xl font-bold text-white-600 mb-12 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+          >
+            GitHub |
+          </a>
+        </div>
+        <div className='text-end mb-3'>
+          <a
+            href="https://medium.com/@lun_0000/color-difference-calculation-in-iq-analyzer-imatest-15d027d7d1fa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-6xl font-bold text-white-600 mb-6 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+          >
+            Medium |
+          </a>
+        </div>
+        {/* <h1 className="text-end text-9xl font-bold text-white-600 mb-1">test</h1> */}
       </header>
 
       <main className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
-        <section className="mb-6">
-            <h2 className="text-2xl text-blue-600 font-semibold">Self Introduction</h2>
-            <p className="text-gray-600 mt-4">
-              I am a web developer with experience in <b>backend</b> technologies such as <b>Django & Next.js</b>, enjoy creating intersting and useful web applications.<br/>
-              Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
-              I look forward to new challenges and opportunities that allow me to blend these two areas of expertise and create impactful digital experiences. If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.
-            </p>
-        </section>
         <section className="mb-4">
           <h2 className="text-2xl text-blue-600 font-semibold">Work Experience</h2>
           <div className="mt-4">
@@ -120,7 +126,7 @@ const Resume = () => {
       </main>
 
       <footer className="text-center mt-4">
-        <Link href="/">Go back to the homepage</Link>
+        <Link href="/">Back to top</Link>
       </footer>
     </div>
   );
