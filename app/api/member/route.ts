@@ -9,9 +9,9 @@ import { NextResponse, NextRequest } from 'next/server';
  */
 export async function POST(request: NextRequest) {
     try {
-        const { email, psswd, verify } = await request.json();
+        const { email, name, messages } = await request.json();
         await connectMongoDB();
-        await Member.create({ email, psswd, verify });
+        await Member.create({ email, name, messages });
         return NextResponse.json({ message: 'Member Created' }, { status: 201 });
     } catch ( err: any ) {
         if( err.code === 11000 ) {

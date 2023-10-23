@@ -5,18 +5,18 @@ import { NextResponse, NextRequest } from 'next/server';
 
 
 /**
- * Encrypt new psswd and update member psswwd. 
+ * Encrypt new name and update member psswwd. 
  */
 export async function PUT(request: NextRequest, params: string) {
     const { id }: any = params;
-    const { email, psswd, verify } = await request.json();
+    const { email, name, messages } = await request.json();
     
-    // hash psswd
+    // hash name
     const saltFactory: string = process.env.saltFactory as string;
     const salt = await bcrypt.genSalt(+saltFactory);
-    const hashPsswd = await bcrypt.hashSync( psswd, salt);
+    const hashPsswd = await bcrypt.hashSync( name, salt);
 
     await connectMongoDB();
-    await Member.findByIdAndUpdate(id, {email, hashPsswd, verify});
+    await Member.findByIdAndUpdate(id, {email, hashPsswd, messages});
     return NextResponse.json({ message: "Member Password Updated" }, { status: 200 });
 }
