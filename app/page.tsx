@@ -16,7 +16,7 @@ const Resume = () => {
               I am a web developer with experience in <b>backend</b> technologies such as <b>Django & Next.js</b><br/>
               Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
               If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.<br/>
-              I look forward to new challenges and opportunities allow me to blend these two areas of expertise and create impactful products.
+              I look forward to new challenges and opportunities to create impactful products.
         </p>
         <div className='text-end mb-3'>
           <a
