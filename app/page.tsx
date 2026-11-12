@@ -12,14 +12,14 @@ const Resume = () => {
       {/* Header Section */}
       <header className="container mx-auto max-w-5xl py-20 px-6">
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400 mb-4">
-          Allen TSOU
+          Allen Tsou
         </h1>
         <p className="text-2xl md:text-3xl font-medium text-cyan-400 mb-8">
-          Camera Image Quality & Video Test Engineer
+          Camera Image & Video Quality Engineer
         </p>
         
         <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-12">
-          Specializing in <b>Camera Image Quality (IQ) Testing</b>, <b>ISP Signal Processing Tuning</b>, and <b>Automated Testing Frameworks</b>. Experienced with standard measurement environments including <b>Imatest, IQ Analyzer, DxO</b>, and <b>VCX specifications</b>.<br /><br />
+          Specializing in <b>Camera Image Quality (IQ) </b>, <b>ISP Signal Processing Tuning</b>, and <b>Automated Testing Frameworks</b>. Experienced with standard measurement environments including <b>Imatest, IQ Analyzer, DxO</b>, and <b>VCX specifications</b>.<br /><br />
           Passionate about bridge-building between hardware-software integration, Computer Vision, and Web Services (Django / Next.js).
         </p>
 
@@ -42,7 +42,7 @@ const Resume = () => {
             GitHub ↗
           </a>
           <a
-            href="https://medium.com/@lun_0000/color-difference-calculation-in-iq-analyzer-imatest-15d027d7d1fa"
+            href="https://medium.com/@lun_0000"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full border border-slate-700 bg-slate-900/80 hover:bg-cyan-500 hover:border-cyan-500 hover:text-slate-950 transition duration-300"
@@ -114,52 +114,16 @@ const Resume = () => {
           </div>
         </section>
 
-        {/* Contact Form Section */}
-        <section className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-white mb-6">Leave a Message</h2>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-slate-400 mb-1">Name</label>
-              <input
-                type="text"
-                id="name"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
-                placeholder="Your Name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-400 mb-1">Email</label>
-              <input
-                type="email"
-                id="email"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-400 mb-1">Message</label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
-                placeholder="How can I help you?"
-              ></textarea>
-            </div>
-            <button
-              type="button"
-              className="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3 rounded-lg transition duration-200"
+        {/* Medium Articles & Technical Insights Section */}
+        <section className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm">
+          <div className="flex justify-between items-center mb-8 border-b border-slate-800 pb-4">
+            <h2 className="text-3xl font-bold text-white">Technical Publications</h2>
+            <a
+              href="https://medium.com/@lun_0000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-cyan-400 hover:text-cyan-300 transition"
             >
-              Send Message
-            </button>
-          </form>
-        </section>
-      </main>
-
-      <footer className="py-8 text-center text-slate-500 text-sm">
-        <Link href="#" className="hover:text-slate-300 transition">Back to top ↑</Link>
-      </footer>
-    </div>
-  );
-};
-
-export default Resume;
+              View on Medium ↗
+            </a>
+          </div>
