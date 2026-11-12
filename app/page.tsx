@@ -1,132 +1,162 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Resume = () => {
   return (  
-    <div className="scroll-smooth bg-gradient-to-r from-gray-600">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-white">
       <Head>
-        <title>My Homepage</title>
+        <title>Allen TSOU | Image Quality & Camera Test Engineer</title>
+        <meta name="description" content="Personal portfolio and resume of Allen Tsou, specializing in Image Quality, ISP Tuning, and Automated Testing Frameworks." />
       </Head>
 
-      <header className="container min-h-screen mx-auto py-12 px-4">
-        <h1 className="text-9xl font-bold text-white-600 mb-1">Allen TSOU</h1>
-        <p className="text-4xl text-white-600 mb-6">Web Developer, Image Quality Engineer</p>
-        <p className="text-white-600 mb-36">
-              I am a web developer with experience in <b>backend</b> technologies such as <b>Django & Next.js</b><br/>
-              Also, I&apos;m passionate about <b>Image Quality, Color Science and Computer Vision</b>.<br/>
-              If you&apos;d like to learn more or collaborate, please don&apos;t hesitate to reach out to me.<br/>
-              I look forward to new challenges and opportunities to create impactful products.
+      {/* Header Section */}
+      <header className="container mx-auto max-w-5xl py-20 px-6">
+        <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400 mb-4">
+          Allen TSOU
+        </h1>
+        <p className="text-2xl md:text-3xl font-medium text-cyan-400 mb-8">
+          Camera Image Quality & Video Test Engineer
         </p>
-        <div className='text-end mb-3'>
+        
+        <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-12">
+          Specializing in <b>Camera Image Quality (IQ) Testing</b>, <b>ISP Signal Processing Tuning</b>, and <b>Automated Testing Frameworks</b>. Experienced with standard measurement environments including <b>Imatest, IQ Analyzer, DxO</b>, and <b>VCX specifications</b>.<br /><br />
+          Passionate about bridge-building between hardware-software integration, Computer Vision, and Web Services (Django / Next.js).
+        </p>
+
+        {/* Social Links */}
+        <div className="flex flex-wrap gap-4 text-lg font-semibold">
           <a
             href="https://www.linkedin.com/in/lun0000/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-6xl font-bold text-white-600 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+            className="px-6 py-3 rounded-full border border-slate-700 bg-slate-900/80 hover:bg-cyan-500 hover:border-cyan-500 hover:text-slate-950 transition duration-300"
           >
-            LinkedIn |
+            LinkedIn ↗
           </a>
-        </div>
-        <div className='text-end mb-3'>
           <a
             href="https://github.com/LUN000"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-6xl font-bold text-white-600 mb-12 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+            className="px-6 py-3 rounded-full border border-slate-700 bg-slate-900/80 hover:bg-cyan-500 hover:border-cyan-500 hover:text-slate-950 transition duration-300"
           >
-            GitHub |
+            GitHub ↗
           </a>
-        </div>
-        <div className='text-end mb-3'>
           <a
             href="https://medium.com/@lun_0000/color-difference-calculation-in-iq-analyzer-imatest-15d027d7d1fa"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-6xl font-bold text-white-600 mb-6 transition duration-800 hover:bg-gradient-to-r from-gray-900"
+            className="px-6 py-3 rounded-full border border-slate-700 bg-slate-900/80 hover:bg-cyan-500 hover:border-cyan-500 hover:text-slate-950 transition duration-300"
           >
-            Medium |
+            Medium Tech Blog ↗
           </a>
         </div>
-        {/* <h1 className="text-end text-9xl font-bold text-white-600 mb-1">test</h1> */}
       </header>
 
-      <main className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
-        <section className="mb-4">
-          <h2 className="text-2xl text-blue-600 font-semibold">Work Experience</h2>
-          <div className="mt-4">
-            <h3 className="text-lg text-gray-600 font-semibold">Image Quality Intern</h3>
-            <p className="text-gray-600">Robert Bosch</p>
-            <p className="text-gray-600">March 2023 - Present</p>
-            <p className="text-gray-600">
-              - Developed and Maintained Image Quality Assessment Tool<br />
-              - Create Automation Testing Tools with Lab Devices<br />
-              - Apply Camera Image Quality Testing
-            </p>
-          </div>
-          <div className="mt-4">
-            <h3 className="text-lg text-gray-600 font-semibold">AI Engineer Intern</h3>
-            <p className="text-gray-600">GliaCloud</p>
-            <p className="text-gray-600">Feb 2022 - Feb 2023</p>
-            <p className="text-gray-600">
-              - Developed Auto Color Template Algorithm Web Service<br />
-              - Create Artical Trend Tag Service<br />
-              - Research on Youtube Data Projects<br />
-              - Research on Text to 3D Motion Model 
-            </p>
+      {/* Main Experience Section */}
+      <main className="container mx-auto max-w-5xl px-6 pb-16 space-y-12">
+        <section className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm">
+          <h2 className="text-3xl font-bold text-white mb-8 border-b border-slate-800 pb-4">
+            Work Experience
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Bell Acoustics */}
+            <div className="border-l-2 border-cyan-500 pl-6 space-y-2">
+              <div className="flex flex-wrap justify-between items-baseline">
+                <h3 className="text-xl font-bold text-white">Video & Image Quality Test Engineer</h3>
+                <span className="text-sm text-cyan-400 font-mono">Aug 2026 – Present</span>
+              </div>
+              <p className="text-slate-400 font-medium">Bell Acoustics Technology (貝爾聲學)</p>
+              <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
+                <li>Manage video test pipeline setup, camera objective/subjective testing, and laboratory maintenance.</li>
+                <li>Implement automated IQ measurement frameworks following VCX standards.</li>
+              </ul>
+            </div>
+
+            {/* Billion Electric */}
+            <div className="border-l-2 border-slate-700 pl-6 space-y-2">
+              <div className="flex flex-wrap justify-between items-baseline">
+                <h3 className="text-xl font-bold text-white">Image Engineer</h3>
+                <span className="text-sm text-slate-400 font-mono">Until Aug 2026</span>
+              </div>
+              <p className="text-slate-400 font-medium">Billion Electric (勝品電通)</p>
+              <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
+                <li>Executed ISP parameter tuning and camera performance optimization across various lighting environments.</li>
+                <li>Developed custom python automation scripts for fast IQ metric analysis and image reporting.</li>
+              </ul>
+            </div>
+
+            {/* Bosch */}
+            <div className="border-l-2 border-slate-700 pl-6 space-y-2">
+              <div className="flex flex-wrap justify-between items-baseline">
+                <h3 className="text-xl font-bold text-white">Image Quality Intern</h3>
+                <span className="text-sm text-slate-400 font-mono">March 2023 – Feb 2024</span>
+              </div>
+              <p className="text-slate-400 font-medium">Robert Bosch</p>
+              <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
+                <li>Developed and maintained Image Quality Assessment automation tools in laboratory environments.</li>
+                <li>Calibrated lab devices and performed camera optical benchmark testing.</li>
+              </ul>
+            </div>
+
+            {/* GliaCloud */}
+            <div className="border-l-2 border-slate-700 pl-6 space-y-2">
+              <div className="flex flex-wrap justify-between items-baseline">
+                <h3 className="text-xl font-bold text-white">AI Engineer Intern</h3>
+                <span className="text-sm text-slate-400 font-mono">Feb 2022 – Feb 2023</span>
+              </div>
+              <p className="text-slate-400 font-medium">GliaCloud</p>
+              <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
+                <li>Developed auto color template algorithm web services and trend tag discovery services.</li>
+                <li>Researched Text-to-3D Motion Models and video asset parsing automation.</li>
+              </ul>
+            </div>
           </div>
         </section>
-      </main>
 
-      <main className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
-        <section className="mb-6">
-          <h5 className="mb-10 text-gray-600 text-center text-xl font-semibold">Leave a reply</h5>
-
-          <form>
-            <div className="relative mb-6" data-te-input-wrapper-init>
-              <input type="text"
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-gray-200 dark:placeholder:text-gray-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                id="exampleInput90" placeholder="Name" />
-              <label
-                className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-600 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-gray-600 dark:peer-focus:text-primary"
-                htmlFor="exampleInput90">Name
-              </label>
+        {/* Contact Form Section */}
+        <section className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-white mb-6">Leave a Message</h2>
+          <form className="space-y-4">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-slate-400 mb-1">Name</label>
+              <input
+                type="text"
+                id="name"
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
+                placeholder="Your Name"
+              />
             </div>
-            <div className="relative mb-6" data-te-input-wrapper-init>
-              <input type="email"
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-gray-200 dark:placeholder:text-gray-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                id="Email" placeholder="Email address" />
-              <label
-                className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-600 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-gray-600 dark:peer-focus:text-primary"
-                htmlFor="Email">Email address
-              </label>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-slate-400 mb-1">Email</label>
+              <input
+                type="email"
+                id="email"
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
+                placeholder="name@example.com"
+              />
             </div>
-            <div className="relative mb-6" data-te-input-wrapper-init>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-slate-400 mb-1">Message</label>
               <textarea
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-gray-200 dark:placeholder:text-gray-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                id="Message" rows={3} placeholder="Message"></textarea>
-              <label htmlFor="Message"
-                className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-600 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-gray-600 dark:peer-focus:text-primary">Message
-              </label>
+                id="message"
+                rows={4}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-cyan-500 transition"
+                placeholder="How can I help you?"
+              ></textarea>
             </div>
-            <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
-              <input type="checkbox"
-                className="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-gray-600 checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                id="copy" />
-              <label className="text-gray-600 inline-block pl-[0.15rem] hover:cursor-pointer" htmlFor="copy">Confirm to send this
-                message</label>
-            </div>
-            <button type="button" data-te-ripple-init data-te-ripple-color="light"
-              className="mb-6 inline-block w-full rounded-full bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-600 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-              Publish
+            <button
+              type="button"
+              className="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3 rounded-lg transition duration-200"
+            >
+              Send Message
             </button>
           </form>
         </section>
-
       </main>
 
-      <footer className="text-center mt-4">
-        <Link href="/">Back to top</Link>
+      <footer className="py-8 text-center text-slate-500 text-sm">
+        <Link href="#" className="hover:text-slate-300 transition">Back to top ↑</Link>
       </footer>
     </div>
   );
