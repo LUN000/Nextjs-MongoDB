@@ -253,7 +253,6 @@ const Resume = () => {
 
       {/* Footer */}
       <footer className="py-8 text-center text-slate-500 text-sm">
-      <footer className="py-8 text-center text-slate-500 text-sm">
         <Link href="#" className="hover:text-slate-300 transition">
           Back to top ↑
         </Link>
