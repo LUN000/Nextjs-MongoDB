@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Allen TSOU | Image Quality & Camera Test Engineer',
+  title: 'Allen TSOU | Camera Image & Video Quality Engineer',
   description:
     'Personal portfolio and resume of Allen Tsou, specializing in Image Quality, ISP Tuning, and Automated Testing Frameworks.',
 };
@@ -15,15 +15,15 @@ const Resume = () => {
           Allen TSOU
         </h1>
         <p className="text-2xl md:text-3xl font-medium text-cyan-400 mb-8">
-          Camera Image Quality & Video Test Engineer
+          Camera Image & Video Quality Engineer
         </p>
 
         <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-12">
-          Specializing in <b>Camera Image Quality (IQ) Testing</b>,{' '}
-          <b>ISP Signal Processing Tuning</b>, and{' '}
+          Specializing in <b>Camera Image Quality (IQ)</b>,{' '}
+          <b>ISP Tuning</b>, and{' '}
           <b>Automated Testing Frameworks</b>. Experienced with standard
           measurement environments including{' '}
-          <b>Imatest, IQ Analyzer, DxO</b>, and <b>VCX specifications</b>.
+          <b>Imatest, IQ Analyzer, Teams, Zoom, RTC, Hello</b> and <b>VCX specifications</b>.
           <br />
           <br />
           Passionate about bridge-building between hardware-software integration,
@@ -71,23 +71,22 @@ const Resume = () => {
             <div className="border-l-2 border-cyan-500 pl-6 space-y-2">
               <div className="flex flex-wrap justify-between items-baseline">
                 <h3 className="text-xl font-bold text-white">
-                  Video & Image Quality Test Engineer
+                  Video & Image Quality Engineer
                 </h3>
                 <span className="text-sm text-cyan-400 font-mono">
                   Aug 2026 – Present
                 </span>
               </div>
               <p className="text-slate-400 font-medium">
-                Bell Acoustics Technology (貝爾聲學)
+                Pal Acoustics Technology (貝爾聲學)
               </p>
               <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
                 <li>
                   Manage video test pipeline setup, camera objective/subjective
-                  testing, and laboratory maintenance.
+                  testing, and laboratory development.
                 </li>
                 <li>
-                  Implement automated IQ measurement frameworks following VCX
-                  standards.
+                  Develop IQ Indicators and automated IQ measurement framework.
                 </li>
               </ul>
             </div>
@@ -97,16 +96,16 @@ const Resume = () => {
               <div className="flex flex-wrap justify-between items-baseline">
                 <h3 className="text-xl font-bold text-white">Image Engineer</h3>
                 <span className="text-sm text-slate-400 font-mono">
-                  Until Aug 2026
+                  Aug 2025 – Aug 2026
                 </span>
               </div>
               <p className="text-slate-400 font-medium">
-                Billion Electric (勝品電通)
+                Topview Optronics (勝品電通)
               </p>
               <ul className="text-slate-300 list-disc list-inside space-y-1 text-sm leading-relaxed">
                 <li>
-                  Executed ISP parameter tuning and camera performance
-                  optimization across various lighting environments.
+                  Executed ISP parameter tuning and camera 2A performance
+                  optimization across various environments.
                 </li>
                 <li>
                   Developed custom python automation scripts for fast IQ metric
